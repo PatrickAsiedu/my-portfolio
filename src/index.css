@@ -5,3 +5,32 @@
 html {
   font-size: 62.5%;
 } */
+
+@media screen and (min-width: 1024px) {
+  html {
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+  }
+
+  body main {
+    height: 100vh;
+    scroll-snap-align: center;
+  }
+
+  body header {
+    scroll-snap-align: center;
+  }
+
+  body section {
+    height: 100vh;
+    scroll-snap-align: center;
+  }
+}
+
+.navanimation {
+  @apply hover:cursor-pointer before:w-0 hover:before:w-[5%] hover:before:content-['']  hover:before:border hover:before:border-primary hover:before:absolute hover:before:bottom-[-1px] hover:before:transition-all hover:before:duration-300;
+}
+
+/* .navanimation {
+  @apply hover:cursor-pointer before:w-0 hover:before:w-[5%] before:content-[''] before:border before:border-primary before:absolute before:bottom-[-1px] hover:before:transition-all hover:before:duration-500;
+} */
