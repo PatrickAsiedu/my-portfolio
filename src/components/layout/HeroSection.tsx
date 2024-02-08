@@ -3,7 +3,7 @@ import React from "react";
 
 const HeroSection = () => {
   return (
-    <motion.main className="mt-20 md:mt-0 md:pt-48 flex pb-32 lg:pb-64">
+    <motion.main className="mt-20 md:mt-0 md:pt-48 flex pb-32 lg:pb-64 herosection">
       <motion.div className="w-full ">
         <motion.h1
           initial={{ y: -50, opacity: 0 }}
