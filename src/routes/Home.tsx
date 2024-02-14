@@ -11,6 +11,7 @@ const Home = () => {
       <Header></Header>
       <HeroSection></HeroSection>
       <MyWorkSection></MyWorkSection>
+
       <MySkillsSection></MySkillsSection>
       <ContactMe></ContactMe>
     </>

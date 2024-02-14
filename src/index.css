@@ -8,7 +8,7 @@ html {
 
 @media screen and (min-width: 1024px) {
   html {
-    scroll-snap-type: y mandatory;
+    /* scroll-snap-type: y mandatory; */
     scroll-behavior: smooth;
   }
 
@@ -22,7 +22,7 @@ html {
   }
 
   .mywork {
-    height: 100vh;
+    /* scroll-snap-type: x mandatory; */
     scroll-snap-align: center;
   }
 
