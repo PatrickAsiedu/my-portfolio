@@ -1,14 +1,16 @@
+import { motion } from "framer-motion";
 import React from "react";
 
 type InputProps = {
   name: string;
   type: string;
   label: string;
+  variants?: any;
 };
 
-export function Input({ name, type, label }: InputProps) {
+export function Input({ name, type, label, variants }: InputProps) {
   return (
-    <div className="w-full pb-6 ">
+    <motion.div variants={variants} className="w-full pb-6 ">
       <label htmlFor="" className="font-bold text-xs block">
         {label}
       </label>
@@ -21,6 +23,6 @@ export function Input({ name, type, label }: InputProps) {
             : "h-12 w-full md:w-96 "
         }`}
       />
-    </div>
+    </motion.div>
   );
 }

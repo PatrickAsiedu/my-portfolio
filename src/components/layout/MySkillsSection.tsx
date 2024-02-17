@@ -1,7 +1,8 @@
-import React from "react";
-import { animate, motion } from "framer-motion";
+import React, { useRef } from "react";
+import { animate, motion, useInView } from "framer-motion";
 import Headline from "./Headline";
 import TechCard from "../cards/TechCard";
+import { useEffect } from "react";
 
 const skills = [
   { id: 1, title: "s" },
@@ -19,10 +20,21 @@ const TechCardVariants = {
     opacity: 0,
     y: -50,
   },
-  animate: { opacity: 1, y: 0, transition: { staggerChildren: 0.1 } },
+  animate: {
+    opacity: 1,
+    y: 0,
+    transition: { staggerChildren: 0.2 },
+  },
 };
 
 const MySkillsSection = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { margin: "-100px" });
+
+  // useEffect(() => {
+  //   console.log("Element is in view: ", isInView);
+  // }, [isInView]);
+
   return (
     <motion.section className="pb-64 md:pt-24 myskills">
       <Headline title={"My skills"}></Headline>
@@ -33,7 +45,9 @@ const MySkillsSection = () => {
       <motion.div
         variants={TechCardVariants}
         initial="initial"
-        whileInView="animate"
+        // whileInView="animate"
+        ref={ref}
+        animate={isInView && "animate"}
         className=" grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4  "
       >
         {skills.map((skill) => (

@@ -21,7 +21,7 @@ const projects = [
   {
     id: 2,
     title: "Food Odering App",
-    img: "http",
+    img: "https://unsplash.com/photos/person-holding-white-and-black-labeled-card-F0e3AdcwVbM",
     description:
       "     Lorem ipsum dolor sit amet consectetur. Pellentesque placerat et id volutpat sit aliquam elementum ultrices amet. Ut consectetur necvolutpat dui in auctor. Sed vestibulum proin nec magna est venenatis viverra venenatis enim. Pellentesque massa elit sit at",
   },
@@ -49,7 +49,7 @@ const MyWorkSection = () => {
   return (
     <motion.section
       ref={ref}
-      className="pb-32 lg:pb-48  h-[calc(500vh)]  mywork relative "
+      className="pb-32 lg:pb-48 h-[calc(500vh)]  mywork relative "
     >
       <Headline title={"My work"}></Headline>
       <motion.div className=" sticky top-0 flex  overflow-hidden ">

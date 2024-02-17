@@ -7,6 +7,7 @@ module.exports = {
         body: "#181818",
         bodylight: "#242424",
         primary: "#03D36B",
+        primaryhover: "#03D36B",
         input: "#303030",
         border: "#434343",
       },

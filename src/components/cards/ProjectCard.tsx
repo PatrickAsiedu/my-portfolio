@@ -7,9 +7,15 @@ const ProjectCard = ({ project }: any) => {
       // style={{ x }}
       // animate={{ x: 5 }}
       // transition={{ duration: 1 }}
-      className="mt-8 lg:mt-32 md:flex md:space-x-10 pb-8 w-[calc(100vw-28rem)]  "
+      className="mt-14 md:mt-32 lg:mt-32 md:flex md:space-x-10 pb-8 w-[calc(100vw-4rem)] md:w-[calc(100vw-8rem)]  2xl:w-[calc(100vw-28rem)]   "
     >
-      <motion.div className="w-full h-64 md:h-80  md:w-[50%] lg:h-[450px] rounded-md bg-input "></motion.div>
+      <motion.div className="w-full h-64 md:h-80  md:w-[50%] lg:h-[450px] rounded-md bg-input  ">
+        {/* <img
+          className="w-full h-full"
+          src="https://unsplash.com/photos/person-holding-white-and-black-labeled-card-F0e3AdcwVbM"
+          alt=""
+        /> */}
+      </motion.div>
       <motion.div className="md:w-[50%]">
         <motion.h1 className="mt-6 md:mt-0 font-bold text-2xl text-center md:text-left ">
           {project.title}

@@ -3,7 +3,7 @@ import React from "react";
 
 const HeroSection = () => {
   return (
-    <motion.main className="mt-20 md:mt-0 md:pt-48 flex pb-32 lg:pb-64 herosection ">
+    <motion.main className="mt-20 md:mt-0 md:pt-48 flex pb-32 lg:pb-64 lg:h-screen 2xl:h-full ">
       <motion.div className="w-full ">
         <motion.h1
           initial={{ y: -50, opacity: 0 }}
@@ -22,14 +22,16 @@ const HeroSection = () => {
           Hire a developer with UI/UX Expericence
         </motion.h1>
 
-        <motion.button
+        <motion.div
           initial={{ y: -20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 1, delay: 1 }}
-          className=" mt-8 bg-primary py-4 px-12 rounded-md font-bold "
+          className="flex justify-center md:justify-start"
         >
-          My work
-        </motion.button>
+          <motion.button className=" mt-8 bg-primary py-4 px-12 rounded-md font-bold ">
+            My work
+          </motion.button>
+        </motion.div>
       </motion.div>
       <motion.div className=""></motion.div>
     </motion.main>

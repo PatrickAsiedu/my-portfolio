@@ -39,10 +39,10 @@ const Header = () => {
       <motion.div
         variants={MenuVariants}
         animate={isOpen ? "open" : "closed"}
-        className="md:hidden bg-body fixed inset-0 z-50  "
-        // className={`md:hidden bg-red-300 fixed top-4 right-4 ${
-        //   isOpen ? "" : ""
-        // } `}
+        // className="md:hidden bg-body fixed inset-0 z-50  "
+        className={`md:hidden  fixed inset-0 z-50 ${
+          isOpen ? "bg-body" : "bg-transparent"
+        } `}
       >
         <motion.nav
           variants={MenuVariants}
