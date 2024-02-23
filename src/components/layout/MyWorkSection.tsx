@@ -2,6 +2,8 @@ import React, { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import Headline from "./Headline";
 import ProjectCard from "../cards/ProjectCard";
+import RenpathyImage from "../../assets/renpathy.png";
+import BeastarsImage from "../../assets/beatstars.png";
 
 type projects = {
   id: number;
@@ -14,7 +16,7 @@ const projects = [
   {
     id: 1,
     title: "React Empathy",
-    img: "http",
+    img: RenpathyImage,
     description:
       "     Lorem ipsum dolor sit amet consectetur. Pellentesque placerat et id volutpat sit aliquam elementum ultrices amet. Ut consectetur necvolutpat dui in auctor. Sed vestibulum proin nec magna est venenatis viverra venenatis enim. Pellentesque massa elit sit at",
   },
@@ -28,7 +30,7 @@ const projects = [
   {
     id: 3,
     title: "Beat Stars Clone",
-    img: "http",
+    img: BeastarsImage,
     description:
       "     Lorem ipsum dolor sit amet consectetur. Pellentesque placerat et id volutpat sit aliquam elementum ultrices amet. Ut consectetur necvolutpat dui in auctor. Sed vestibulum proin nec magna est venenatis viverra venenatis enim. Pellentesque massa elit sit at",
   },

@@ -26,6 +26,10 @@ html {
     scroll-snap-align: center;
   }
 
+  .myworkalt div {
+    scroll-snap-align: center;
+  }
+
   .myskills {
     scroll-snap-align: center;
   }
