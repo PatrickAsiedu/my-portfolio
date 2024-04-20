@@ -1,6 +1,7 @@
 import React from "react";
 import RenpathyImage from "../../assets/renpathy.png";
 import BeastashImage from "../../assets/beatstash.png";
+import BslOrdersImage from "../../assets/bslorders.png";
 import ProjectCardAlt from "../cards/ProjectCardAlt";
 import Headline from "./Headline";
 import { useRef } from "react";
@@ -24,25 +25,25 @@ const projects = [
   },
   {
     id: 2,
-    title: "Food Odering App",
+    title: "BeatStash",
     img: BeastashImage,
     description:
       "     Lorem ipsum dolor sit amet consectetur. Pellentesque placerat et id volutpat sit aliquam elementum ultrices amet. Ut consectetur necvolutpat dui in auctor. Sed vestibulum proin nec magna est venenatis viverra venenatis enim. Pellentesque massa elit sit at",
   },
   {
     id: 3,
-    title: "Beat Stars Clone",
-    img: RenpathyImage,
+    title: "Bsl Orders",
+    img: BslOrdersImage,
     description:
       "     Lorem ipsum dolor sit amet consectetur. Pellentesque placerat et id volutpat sit aliquam elementum ultrices amet. Ut consectetur necvolutpat dui in auctor. Sed vestibulum proin nec magna est venenatis viverra venenatis enim. Pellentesque massa elit sit at",
   },
-  {
-    id: 4,
-    title: "Space Invaders",
-    img: BeastashImage,
-    description:
-      "     Lorem ipsum dolor sit amet consectetur. Pellentesque placerat et id volutpat sit aliquam elementum ultrices amet. Ut consectetur necvolutpat dui in auctor. Sed vestibulum proin nec magna est venenatis viverra venenatis enim. Pellentesque massa elit sit at",
-  },
+  // {
+  //   id: 3,
+  //   title: "Beat Stars Clone",
+  //   img: RenpathyImage,
+  //   description:
+  //     "     Lorem ipsum dolor sit amet consectetur. Pellentesque placerat et id volutpat sit aliquam elementum ultrices amet. Ut consectetur necvolutpat dui in auctor. Sed vestibulum proin nec magna est venenatis viverra venenatis enim. Pellentesque massa elit sit at",
+  // },
 ];
 
 // const Portfolio = (
