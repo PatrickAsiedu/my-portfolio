@@ -18,25 +18,32 @@ type projects = {
 const projects = [
   {
     id: 1,
-    title: "React Empathy",
-    img: RenpathyImage,
-    description:
-      "     Lorem ipsum dolor sit amet consectetur. Pellentesque placerat et id volutpat sit aliquam elementum ultrices amet. Ut consectetur necvolutpat dui in auctor. Sed vestibulum proin nec magna est venenatis viverra venenatis enim. Pellentesque massa elit sit at",
-  },
-  {
-    id: 2,
-    title: "BeatStash",
-    img: BeastashImage,
-    description:
-      "     Lorem ipsum dolor sit amet consectetur. Pellentesque placerat et id volutpat sit aliquam elementum ultrices amet. Ut consectetur necvolutpat dui in auctor. Sed vestibulum proin nec magna est venenatis viverra venenatis enim. Pellentesque massa elit sit at",
-  },
-  {
-    id: 3,
     title: "Bsl Orders",
     img: BslOrdersImage,
     description:
-      "     Lorem ipsum dolor sit amet consectetur. Pellentesque placerat et id volutpat sit aliquam elementum ultrices amet. Ut consectetur necvolutpat dui in auctor. Sed vestibulum proin nec magna est venenatis viverra venenatis enim. Pellentesque massa elit sit at",
+      "At Broadspectrum, where all employees are entitled to lunch, the use of Microsoft Forms for order placement resulted in inaccuracies, increased company costs, and added complexity for chefs. BSL Lunch is an authenticated web-based application designed to reduce costs by preventing duplicate orders, ensuring order accuracy, and simplifying the process for chefs, thereby improving efficiency and user experience.",
   },
+  {id:2,
+    title:"TradeFlow",
+    img: BeastashImage,
+    description : "TradeFlow is a comprehensive trading engine web application that enables users to monitor real-time stock market trends, manage portfolios, and execute trades across multiple exchanges to achieve optimal market value. It was built with a micro-service architecture using spring boot and Angular."
+  },
+
+  {
+    id: 3,
+    title: "BeatStash",
+    img: BeastashImage,
+    description:
+      "     A dynamic marketplace connecting music producers and artists, enabling producers to sell instrumentals and artists to purchase them. It features a robust search engine for discovering beats and an integrated audio player for seamless previewing.",
+  },
+  {
+    id: 4,
+    title: "React Empathy",
+    img: RenpathyImage,
+    description:
+      "Renpathy, a Web app for documenting contracts between real estate owners and applicants ",
+  },
+
   // {
   //   id: 3,
   //   title: "Beat Stars Clone",
