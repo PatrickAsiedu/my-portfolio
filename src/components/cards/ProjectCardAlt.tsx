@@ -46,7 +46,7 @@ const ProjectCard = ({ project }: any) => {
           {/* <button>here</button> */}
         </div>
         <img
-          className=" w-full h-full object-cover object-top md:object-left lg:object-center rounded-md transition-all group-hover:scale-105 group-hover:flex group-hover:transition-all group-hover:duration-[800ms] duration-[800ms]   "
+          className=" w-full h-full object-cover object-top md:object-left  rounded-md transition-all group-hover:scale-105 group-hover:flex group-hover:transition-all group-hover:duration-[800ms] duration-[800ms]   "
           src={project.img}
           alt=""
         />

@@ -1,9 +1,11 @@
 import React from "react";
 import RenpathyImage from "../../assets/renpathy.png";
-import BeastashImage from "../../assets/beatstash.png";
+import BeatstashImage from "../../assets/beatstash.png";
 import BslOrdersImage from "../../assets/bslorders.png";
 import ProjectCardAlt from "../cards/ProjectCardAlt";
 import Headline from "./Headline";
+import TradeFlowImage from "../../assets/tradeflowscreenshot.png";
+
 import { useRef } from "react";
 import { useScroll, useSpring, motion } from "framer-motion";
 import { useTransform } from "framer-motion";
@@ -23,16 +25,18 @@ const projects = [
     description:
       "At Broadspectrum, where all employees are entitled to lunch, the use of Microsoft Forms for order placement resulted in inaccuracies, increased company costs, and added complexity for chefs. BSL Lunch is an authenticated web-based application designed to reduce costs by preventing duplicate orders, ensuring order accuracy, and simplifying the process for chefs, thereby improving efficiency and user experience.",
   },
-  {id:2,
-    title:"TradeFlow",
-    img: BeastashImage,
-    description : "TradeFlow is a comprehensive trading engine web application that enables users to monitor real-time stock market trends, manage portfolios, and execute trades across multiple exchanges to achieve optimal market value. It was built with a micro-service architecture using spring boot and Angular."
+  {
+    id: 2,
+    title: "TradeFlow",
+    img: TradeFlowImage,
+    description:
+      "TradeFlow is a comprehensive trading engine web application that enables users to monitor real-time stock market trends, manage portfolios, and execute trades across multiple exchanges to achieve optimal market value. It was built with a micro-service architecture using spring boot and Angular.",
   },
 
   {
     id: 3,
     title: "BeatStash",
-    img: BeastashImage,
+    img: BeatstashImage,
     description:
       "     A dynamic marketplace connecting music producers and artists, enabling producers to sell instrumentals and artists to purchase them. It features a robust search engine for discovering beats and an integrated audio player for seamless previewing.",
   },
