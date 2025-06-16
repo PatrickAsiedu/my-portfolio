@@ -1,15 +1,16 @@
 import { motion } from "framer-motion";
-import React from "react";
+import myImage from "../../assets/patrick-2ff.jpg";
+// import myImage from "../../assets/patrick-2f.jpg"
 
 const HeroSection = () => {
   return (
-    <motion.main className="mt-20 md:mt-0 md:pt-48 flex pb-32 lg:pb-64 lg:h-screen 2xl:h-full ">
-      <motion.div className="w-full ">
+    <motion.main className="mt-20 md:mt-0 md:pt-48 md:flex pb-32 lg:pb-64 lg:h-screen 2xl:h-full relative ">
+      <motion.div className="w-full  ">
         <motion.h1
           initial={{ y: -50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 1 }}
-          className="  font-bold  text-center text-4xl md:text-5xl md:text-left lg:text-6xl 2xl:text-[4.1rem] md:leading-[1.1]"
+          className="  font-bold  text-center text-4xl md:text-5xl md:text-left lg:text-6xl xl:text-[5.1rem]  md:leading-[1.1]"
         >
           Beautifully <br></br> Crafted Web <br></br> Experiences.
         </motion.h1>
@@ -19,7 +20,7 @@ const HeroSection = () => {
           transition={{ duration: 1, delay: 0.5 }}
           className="mt-6 text-center font-light  md:text-left"
         >
-          Hire a developer with UI/UX Expericence
+          Hire a front-end developer with UI/UX intuition
         </motion.h1>
 
         <motion.div
@@ -33,7 +34,18 @@ const HeroSection = () => {
           </motion.button>
         </motion.div>
       </motion.div>
-      <motion.div className=""></motion.div>
+      <motion.div
+        className="relative w-full "
+        initial={{ y: -50, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 1 }}
+      >
+        <img
+          src={myImage}
+          className="mt-4 w-full md:w-[90%] xl:w-[80%] md:absolute -top-24 lg:-top-32   "
+          alt=""
+        />
+      </motion.div>
     </motion.main>
   );
 };
