@@ -20,7 +20,7 @@ const ContactMe = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { margin: "50px" });
   return (
-    <motion.section className="pb-32 md:pt-24 contactme">
+    <motion.section className="pb-32 md:pt-24 contactme" id="contactme">
       <Headline title={"Contact Me"}></Headline>
       <motion.h2 ref={ref} className=" mt-8 font-light pb-14">
         Feel free to contact me at anytime via the means below.

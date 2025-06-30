@@ -49,7 +49,7 @@ const MySkillsSection = () => {
   // }, [isInView]);
 
   return (
-    <motion.section className="pb-64 md:pt-24 myskills">
+    <motion.section className="pb-64 md:pt-24 myskills" id="myskills">
       <Headline title={"My skills"}></Headline>
       <motion.h2 className="mt-8 font-light mb-12 ">
         I’ve had the pleasure to master these modern stacks and technologies at

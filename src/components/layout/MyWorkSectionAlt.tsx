@@ -80,7 +80,7 @@ const Portfolio = () => {
     damping: 30,
   });
   return (
-    <section className="myworkalt " ref={ref}>
+    <section className="myworkalt " ref={ref} id="mywork">
       <Headline title={"My work"}></Headline>
       {/* <motion.div
         style={{ scaleX }}
