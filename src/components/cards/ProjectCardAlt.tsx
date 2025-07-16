@@ -3,6 +3,9 @@ import { motion, useInView } from "framer-motion";
 import { useRef, useEffect } from "react";
 import { useScroll } from "framer-motion";
 import { useTransform } from "framer-motion";
+import { MdOutlineArrowOutward } from "react-icons/md";
+import { FC } from "react";
+import { FaGithub } from "react-icons/fa";
 
 const ProjectCard = ({ project }: any) => {
   const TextVariants = {
@@ -43,7 +46,14 @@ const ProjectCard = ({ project }: any) => {
         className=" w-full h-64 md:h-80  md:w-[50%] lg:h-[450px] rounded-md bg-input cursor-pointer relative  group overflow-hidden"
       >
         <div className="w-full h-full bg-black/30 absolute hidden group-hover:flex group-hover:transition-all group-hover:duration-1000 items-center justify-center z-10 ">
-          {/* <button>here</button> */}
+          <div className="rounded-full flex bg-black  py-4 ">
+            <a href={project.link} className="px-4">
+              <MdOutlineArrowOutward size={"2em"} />
+            </a>
+            <a href={project.repo} className="border-l-2 border-gray-400 px-4 ">
+              <FaGithub size={"2em"}></FaGithub>
+            </a>
+          </div>
         </div>
         <img
           className=" w-full h-full object-cover object-top md:object-left  rounded-md transition-all group-hover:scale-105 group-hover:flex group-hover:transition-all group-hover:duration-[800ms] duration-[800ms]   "
