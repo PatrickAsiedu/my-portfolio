@@ -45,7 +45,7 @@ const projects = [
     description:
       "     A dynamic marketplace connecting music producers and artists, enabling producers to sell instrumentals and artists to purchase them. It features a robust search engine for discovering beats and an integrated audio player for seamless previewing.",
     link: "",
-    repo: "",
+    repo: "https://github.com/PatrickAsiedu/beatstash-frontend",
   },
   {
     id: 4,
@@ -54,7 +54,7 @@ const projects = [
     description:
       "Renpathy, a Web app for documenting contracts between real estate owners and applicants ",
     link: "",
-    repo: "",
+    repo: "https://github.com/PatrickAsiedu/dealtor-web",
   },
 
   // {

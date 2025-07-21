@@ -6,6 +6,7 @@ import { useTransform } from "framer-motion";
 import { MdOutlineArrowOutward } from "react-icons/md";
 import { FC } from "react";
 import { FaGithub } from "react-icons/fa";
+import { FunctionComponent } from 'react';
 
 const ProjectCard = ({ project }: any) => {
   const TextVariants = {
@@ -48,10 +49,10 @@ const ProjectCard = ({ project }: any) => {
         <div className="w-full h-full bg-black/30 absolute hidden group-hover:flex group-hover:transition-all group-hover:duration-1000 items-center justify-center z-10 ">
           <div className="rounded-full flex bg-black  py-4 ">
             <a href={project.link} className="px-4">
-              <MdOutlineArrowOutward size={"2em"} />
+            {(MdOutlineArrowOutward as FunctionComponent)({ size: '2em' })}
             </a>
             <a href={project.repo} className="border-l-2 border-gray-400 px-4 ">
-              <FaGithub size={"2em"}></FaGithub>
+            {(FaGithub as FunctionComponent)({ size: '2em' })}
             </a>
           </div>
         </div>
