@@ -1,0 +1,32 @@
+services:
+  web:
+    build:
+      context: .
+    ports:
+      - 3000:3000
+    image: myportfolio:1.0  # Your custom tag
+    container_name: myporfolio
+
+    # volumes:
+    #bind current dir to container dir
+    #   - .:/usr/src/app
+    #   - ./node_modules:/app/node_modules
+
+    develop:
+      watch:
+        #use either volume binding or sync for hot reload code and public files tho sync is faster
+        # Sync source files
+        - action: sync
+          path: ./src
+          target: /usr/src/app/src
+          ignore:
+            - node_modules/
+
+        # Sync public assets
+        - action: sync
+          path: ./public
+          target: /usr/src/app/public
+
+        # Sync package files and rebuild
+        - action: rebuild
+          path: package*.json
