@@ -34,4 +34,5 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           push: true
+          target: production
           tags: ${{ vars.DOCKERHUB_USERNAME }}/myportfolio:latest,${{ vars.DOCKERHUB_USERNAME }}/myportfolio:${{ steps.extract_tag.outputs.version }}

@@ -2,9 +2,10 @@ services:
   web:
     build:
       context: .
+      target: development
     ports:
       - 3000:3000
-    image: myportfolio:1.0  # Your custom tag
+    image: myportfolio:1.0 # Your custom tag
     container_name: myporfolio
 
     # volumes:
