@@ -24,7 +24,7 @@ const projects = [
     img: BslOrdersImage,
     description:
       "At Broadspectrum, where all employees are entitled to lunch, the use of Microsoft Forms for order placement resulted in inaccuracies, increased company costs, and added complexity for chefs. BSL Lunch is an authenticated web-based application designed to reduce costs by preventing duplicate orders, ensuring order accuracy, and simplifying the process for chefs, thereby improving efficiency and user experience.",
-    link: "",
+    link: "https://bslorders-client.vercel.app/",
     repo: "https://github.com/PatrickAsiedu/bslorders-client",
   },
 
@@ -44,7 +44,7 @@ const projects = [
     img: BeatstashImage,
     description:
       "     A dynamic marketplace connecting music producers and artists, enabling producers to sell instrumentals and artists to purchase them. It features a robust search engine for discovering beats and an integrated audio player for seamless previewing.",
-    link: "",
+    link: "https://beatstash.onrender.com",
     repo: "https://github.com/PatrickAsiedu/beatstash-frontend",
   },
   {
@@ -53,7 +53,7 @@ const projects = [
     img: RenpathyImage,
     description:
       "Renpathy, a Web app for documenting contracts between real estate owners and applicants ",
-    link: "",
+    link: "https://dealtor-web.vercel.app/",
     repo: "https://github.com/PatrickAsiedu/dealtor-web",
   },
 
