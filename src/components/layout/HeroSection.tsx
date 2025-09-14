@@ -4,7 +4,10 @@ import myImage from "../../assets/patrick-2ff.jpg";
 
 const HeroSection = () => {
   return (
-    <motion.main className="mt-20 md:mt-0 md:pt-48 md:flex pb-32 lg:pb-64 lg:h-screen 2xl:h-full relative " id="home">
+    <motion.main
+      className="mt-20 md:mt-0 md:pt-48 md:flex pb-32 lg:pb-64 lg:h-screen 2xl:h-full relative "
+      id="home"
+    >
       <motion.div className="w-full  ">
         <motion.h1
           initial={{ y: -50, opacity: 0 }}
@@ -29,7 +32,10 @@ const HeroSection = () => {
           transition={{ duration: 1, delay: 1 }}
           className="flex justify-center md:justify-start"
         >
-          <motion.a href="#mywork" className=" mt-8 bg-primary py-4 px-12 rounded-md font-bold ">
+          <motion.a
+            href="#mywork"
+            className=" mt-8 bg-primary py-4 px-12 rounded-md font-bold "
+          >
             My work
           </motion.a>
         </motion.div>
@@ -42,6 +48,12 @@ const HeroSection = () => {
       >
         <img
           src={myImage}
+          srcSet={`
+            ${myImage} 400w,
+            ${myImage} 800w,
+            ${myImage} 1200w
+          `}
+          sizes="(max-width: 768px) 100vw, (max-width: 1280px) 80vw, 50vw"
           className="mt-4 w-full md:w-[90%] xl:w-[80%] md:absolute -top-24 lg:-top-32   "
           alt=""
         />

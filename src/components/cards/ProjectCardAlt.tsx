@@ -6,7 +6,7 @@ import { useTransform } from "framer-motion";
 import { MdOutlineArrowOutward } from "react-icons/md";
 import { FC } from "react";
 import { FaGithub } from "react-icons/fa";
-import { FunctionComponent } from 'react';
+import { FunctionComponent } from "react";
 
 const ProjectCard = ({ project }: any) => {
   const TextVariants = {
@@ -42,18 +42,30 @@ const ProjectCard = ({ project }: any) => {
       // transition={{ duration: 1 }}
       className="mt-14 md:mt-32 lg:mt-32 md:flex md:space-x-10 pb-8  "
     >
-      <motion.a
-        href="/"
+      <motion.div
+
         className=" w-full h-64 md:h-80  md:w-[50%] lg:h-[450px] rounded-md bg-input cursor-pointer relative  group overflow-hidden"
       >
         <div className="w-full h-full bg-black/30 absolute hidden group-hover:flex group-hover:transition-all group-hover:duration-1000 items-center justify-center z-10 ">
           <div className="rounded-full flex bg-black  py-4 ">
-            <a href={project.link} className="px-4">
-            {(MdOutlineArrowOutward as FunctionComponent)({ size: '2em' })}
-            </a>
-            <a href={project.repo} className="border-l-2 border-gray-400 px-4 ">
-            {(FaGithub as FunctionComponent)({ size: '2em' })}
-            </a>
+            <button
+              type="button"
+              className="px-4"
+              onClick={() =>
+                window.open(project.link)
+              }
+            >
+              {(MdOutlineArrowOutward as FunctionComponent)({ size: "2em" })}
+            </button>
+            <button
+              type="button"
+              className="border-l-2 border-gray-400 px-4 "
+              onClick={() =>
+                window.open(project.repo)
+              }
+            >
+              {(FaGithub as FunctionComponent)({ size: "2em" })}
+            </button>
           </div>
         </div>
         <img
@@ -61,7 +73,7 @@ const ProjectCard = ({ project }: any) => {
           src={project.img}
           alt=""
         />
-      </motion.a>
+      </motion.div>
       <motion.div
         variants={TextVariants}
         initial="initial"
