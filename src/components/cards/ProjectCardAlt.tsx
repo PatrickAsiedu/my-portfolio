@@ -47,7 +47,7 @@ const ProjectCard = ({ project }: any) => {
         className=" w-full h-64 md:h-80  md:w-[50%] lg:h-[450px] rounded-md bg-input cursor-pointer relative  group overflow-hidden"
       >
         <div className="w-full h-full bg-black/30 absolute hidden group-hover:flex group-hover:transition-all group-hover:duration-1000 items-center justify-center z-10 ">
-          <div className="rounded-full flex bg-black  py-4 ">
+          <div className="rounded-full flex bg-black/60 backdrop-blur-md py-4 px-6">
             <button
               type="button"
               className="px-4"
