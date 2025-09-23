@@ -34,8 +34,8 @@ const projects = [
     img: TradeFlowImage,
     description:
       "TradeFlow is a comprehensive trading engine web application that enables users to monitor real-time stock market trends, manage portfolios, and execute trades across multiple exchanges to achieve optimal market value. It was built with a micro-service architecture using spring boot and Angular.",
-    link: "",
-    repo: "",
+    link: "https://tf-client-app.vercel.app",
+    repo: "https://github.com/PatrickAsiedu/tf-client-app",
   },
 
   {
