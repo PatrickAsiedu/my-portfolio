@@ -23,7 +23,7 @@ const projects = [
     title: "Bsl Orders",
     img: BslOrdersImage,
     description:
-      "At Broadspectrum, where all employees are entitled to lunch, the use of Microsoft Forms for order placement resulted in inaccuracies, increased company costs, and added complexity for chefs. BSL Lunch is an authenticated web-based application designed to reduce costs by preventing duplicate orders, ensuring order accuracy, and simplifying the process for chefs, thereby improving efficiency and user experience.",
+      "At Broadspectrum, where all employees are entitled to lunch, the use of Microsoft Forms for order placement resulted in tampered orders, increased company costs, and added complexity for chefs. BSLOrders is an authenticated web-based application designed to reduce company costs by preventing unauthorized orders, ensuring order accuracy for employees, and simplifying the process for chefs, thereby improving efficiency and user experience.",
     link: "https://bslorders-client.vercel.app/",
     repo: "https://github.com/PatrickAsiedu/bslorders-client",
   },
