@@ -1,11 +1,11 @@
 import { motion } from "framer-motion";
-import myImage from "../../assets/patrick-2ff.jpg";
-// import myImage from "../../assets/patrick-2f.jpg"
+import myImage from "../../assets/patrick.jpeg";
+
 
 const HeroSection = () => {
   return (
     <motion.main
-      className="mt-20 md:mt-0 md:pt-48 md:flex pb-32 lg:pb-64 lg:h-screen 2xl:h-full relative "
+      className="mt-20 md:mt-0 md:pt-48 md:flex pb-32 lg:pb-64 xl:h-screen 2xl:h-full relative "
       id="home"
     >
       <motion.div className="w-full  ">
@@ -54,7 +54,7 @@ const HeroSection = () => {
             ${myImage} 1200w
           `}
           sizes="(max-width: 768px) 100vw, (max-width: 1280px) 80vw, 50vw"
-          className="mt-4 w-full md:w-[90%] xl:w-[80%] md:absolute -top-24 lg:-top-32   "
+          className="mt-4 w-full  md:absolute -top-24 lg:-top-32 xl:-top-48   "
           alt=""
         />
       </motion.div>

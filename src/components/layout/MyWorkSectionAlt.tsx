@@ -96,7 +96,7 @@ const Portfolio = () => {
         className="h-3 w-full bg-blue-300    "
       ></motion.div> */}
       {projects.map((project) => (
-        <div key={project.id} className="lg:h-screen ">
+        <div key={project.id} className="xl:h-screen ">
           <ProjectCardAlt project={project}></ProjectCardAlt>
         </div>
       ))}
